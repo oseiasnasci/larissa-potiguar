@@ -945,10 +945,141 @@ data-styled.g23[id='Headerstyle__HeaderContainer-sc-fgafwh-0'] {
 /*!sc*/
 @media (max-width: 768px) {
   .hLWCHe {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+
+  }
+
+  .container {
+    margin-top: 150px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 900px;
+  }
+
+  .cube {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube .topFace {
+    height: 350px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube .bottomFace {
+    height: 350px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube .backFace {
+    width: 350px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .backFace {
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+    background-color: gray;
+    transform: translateZ(-150px) translateX(-25px);
+  }
+  
+  .leftFace {
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.2);
+    background-color: gray;
+    transform: rotateY(90deg) translateZ(175px);
+  }
+  
+  .rightFace {
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.2);
+    background-color: gray;
+    transform: rotateY(-90deg) translateZ(175px);
+  }
+  
+  .topFace {
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transform: rotateY(-90deg) rotateX(90deg) translateZ(175px);
+  }
+  
+  .bottomFace {
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.2);
+    background-color: #c9c9c9;
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(25px);
+  }
+  
+  .pisoBottomFace {
+    //background-image: url(/background.png);
+    background-repeat: repeat-x repeat-y;
+    width: 100%;
+    padding-top: 32px;
+  }
+  
+  .leftFaceWindows {
+    background-image: url(/src/img/janela.png);
+    height: 5px;
+    background-size: cover; 
+  }
+  
+  .rightFaceDoor {
+    background-image: url(/src/img/porta.png);
+    height: 5px;
+    background-size: cover; 
+  }
+  
+  .BackFaceQuadros {
+    background-image: url(/src/img/quadros.png);
+    height: 5px;
+    background-size: cover; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100px;
+  
+    gap: 10px;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+    background-color: #ffffff;
+    height: 30px;
+  }
+  
+  #imgLogoText {
+    height: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .logoPotiguar img {
+    background-color: #ffffff;
+    height: 35px;
+  }
+
+  .logoSuvinil img {
+    height: 25px;
   }
 }
 
@@ -1127,7 +1258,7 @@ data-styled.g29[id='LinkButtonstyle__Link-sc-i750pz-0'] {
 /*!sc*/
 @media (max-width: 1024px) {
   .VBMvI {
-    display: none;
+   
   }
 }
 
